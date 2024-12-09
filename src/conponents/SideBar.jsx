@@ -50,7 +50,8 @@ const SideBar = () => {
       localStorage.removeItem("userData");
       clearUserData();
       setUserDetails(null);
-      window.location.href = "/signin";
+      window.location.href = "/";
+
     } catch (error) {
       console.error(error.message || "Error fetching user details");
       toast.error(error.message || "Error fetching user details");
